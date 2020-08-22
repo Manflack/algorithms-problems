@@ -61,12 +61,16 @@ vector<long long int> myUnsortedVector2 = {1, 2, 3, 4, 3};
 vector<long long int> myUnsortedVector3 = {3, 2, 3, 4, 5};
 vector<long long int> myUnsortedVector4 = {1, 2, 3, 5, 4};
 
-
 // main
 int main()
 {
+	cout << "--- count occurrences of a number ---" << endl;
 	cout << count(myVector, myValue) << endl;
+
+	cout << "--- product of two array[i] with fill function ---" << endl;
 	cout << inner_product(myVector, myFilledArray) << endl;
+
+	cout << "--- is sorted? ---" << endl;
 	cout << is_sorted(mySortedVector1) << endl;
 	cout << is_sorted(mySortedVector2) << endl;
 	cout << is_sorted(mySortedVector3) << endl;
@@ -129,4 +133,3 @@ bool is_sorted(vector <T> &array)
     }
     return true;
 }
-
